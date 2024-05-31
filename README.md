@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# create-next-pwa
 
-## Getting Started
+This CLI tool enables you to quickly create a PWA on top of Next.js with zero config needed.
 
-First, run the development server:
 
+## Usage
+
+To create your Next.js powered PWA run
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  npx create-next-pwa
 ```
+Or clone this repo 🙂
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will create a basic Next.js template with additional files for PWA support.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+These awesome features are possible thanks to the great - [@shadowwalker](https://github.com/shadowwalker/next-pwa), creator of next-pwa plugin.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- 0️⃣ Zero config for registering and generating service worker
+- ✨ Optimized precache and runtime cache
+- 💯 Maximize lighthouse score
+- 🎈 Easy to understand examples
+- 📴 Completely offline support with fallbacks [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/offline-fallback-v2) 🆕
+- 📦 Use [workbox](https://developer.chrome.com/docs/workbox/) and [workbox-window](https://developer.chrome.com/docs/workbox/modules/workbox-window) v6
+- 🍪 Work with cookies out of the box
+- 🔉 Default range requests for audios and videos
+- ☕ No custom server needed for Next.js 9+ [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/next-9)
+- 🔧 Handle PWA lifecycle events opt-in [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/lifecycle)
+- 📐 Custom worker to run extra code with code splitting and **typescript** support [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/custom-ts-worker)
+- 📜 [Public environment variables](https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser) available in custom worker as usual
+- 🐞 Debug service worker with confidence in development mode without caching
+- 🌏 Internationalization (a.k.a I18N) with `next-i18next` [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/next-i18next)
+- 🛠 Configurable by the same [workbox configuration options](https://developer.chrome.com/docs/workbox/modules/workbox-webpack-plugin) for [GenerateSW](https://developer.chrome.com/docs/workbox/modules/workbox-webpack-plugin/#generatesw-plugin) and [InjectManifest](https://developer.chrome.com/docs/workbox/modules/workbox-webpack-plugin/#injectmanifest-plugin)
+- 🚀 Spin up a [GitPod](https://gitpod.io/#https://github.com/shadowwalker/next-pwa/) and try out examples in rocket speed
+- ⚡ Support [blitz.js](https://blitzjs.com/) (simply add to `blitz.config.js`)
+- 🔩 (Experimental) precaching `.module.js` when `next.config.js` has `experimental.modern` set to `true`
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions are always welcome!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
