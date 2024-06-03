@@ -1,4 +1,4 @@
-# create-next-pwa
+# create-nextjs-pwa
 
 This CLI tool enables you to quickly create a PWA on top of Next.js with zero config needed.
 
