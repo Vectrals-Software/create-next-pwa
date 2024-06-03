@@ -40,3 +40,8 @@ These awesome features are possible thanks to the great - [@shadowwalker](https:
 
 Contributions are always welcome!
 
+## Authors
+
+- [@Enzo-21](https://github.com/Enzo-21)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
