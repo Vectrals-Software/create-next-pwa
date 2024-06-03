@@ -7,7 +7,7 @@ This CLI tool enables you to quickly create a PWA on top of Next.js with zero co
 
 To create your Next.js powered PWA run
 ```bash
-  npx create-next-pwa
+  npx create-nextjs-pwa
 ```
 Or clone this repo 🙂
 
